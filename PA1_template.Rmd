@@ -48,6 +48,8 @@ stepsInterval[which.max(stepsInterval$steps),]$interval
 
 
 ## Imputing missing values
+The strategy for imputing missing values is to input 0s where there are NA.
+
 ```{r, echo = TRUE}
 sum(!complete.cases(data))
 completedData <- data
